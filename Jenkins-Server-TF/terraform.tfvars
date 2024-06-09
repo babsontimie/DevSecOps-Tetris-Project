@@ -1,0 +1,8 @@
+vpc-name      = "TeeJenkins-vpc"
+igw-name      = "TeeJenkins-igw"
+subnet-name   = "TeeJenkins-subnet"
+rt-name       = "TeeJenkins-route-table"
+sg-name       = "TeeJenkins-sg"
+instance-name = "TeeJenkins-Devsecops-server"
+key-name      = "devsecopsjenkins"
+iam-role      = "Jenkins-devsecops-iam-role"
