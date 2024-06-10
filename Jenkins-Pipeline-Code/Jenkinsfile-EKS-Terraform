@@ -34,7 +34,7 @@ pipeline {
                         free
                         echo "-----------------------"
                         free -m
-                        terraform validate -no-color -input=false -debug '''
+                        terraform validate '''
                     }
                 }
                 }
