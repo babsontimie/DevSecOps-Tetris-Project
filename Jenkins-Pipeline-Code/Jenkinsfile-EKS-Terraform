@@ -29,7 +29,12 @@ pipeline {
                 withAWS(credentials: 'aws-key', region: 'us-east-1') {
                 dir('EKS-TF') {
                     script {
-                        sh 'terraform validate'
+                        sh '''
+                        df -kh
+                        free
+                        echo "-----------------------"
+                        free -m
+                        terraform validate'''
                     }
                 }
                 }
